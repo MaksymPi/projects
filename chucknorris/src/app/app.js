@@ -1,10 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./app-router";
+
+import { AppLayout } from "./app-layout/app-layout";
+import { AppRouter } from "./app-router/app-router";
 
 export const App = () => {
   return (
     <BrowserRouter>
-      <AppRouter />
+      <AppLayout>
+        <AppRouter />
+      </AppLayout>
     </BrowserRouter>
   );
 };
